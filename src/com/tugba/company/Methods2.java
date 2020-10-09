@@ -22,6 +22,6 @@ public class Methods2 {
        return 5+5;
     }
     public static String sehirVer(){
-        return "Istanbul";
+        return "Ankara";
     }
 }
