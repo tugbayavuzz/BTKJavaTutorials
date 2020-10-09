@@ -6,7 +6,10 @@ public class Methods2 {
         System.out.println(mesaj.substring(2,5));
         String yeniMesaj=sehirVer();
         System.out.println(yeniMesaj);
-        int toplam = topla(5,7);
+        int toplam1 = topla(5,7);
+        System.out.println(toplam1);
+
+        int toplam=topla2(1,2,5,4,8);
         System.out.println(toplam);
     }
 
@@ -21,6 +24,13 @@ public class Methods2 {
     }
     public static int topla(int x,int y){
        return x+y;
+    }
+    public static int topla2(int...  sayilar){
+        int toplam=0;
+        for (int sayi:sayilar){
+            toplam+=sayi;
+        }
+        return toplam;
     }
     public static String sehirVer(){
         return "Ankara";
